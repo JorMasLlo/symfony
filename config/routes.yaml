@@ -13,3 +13,9 @@ blog_list_twig:
 blog_show_twig:
     path:     /blogtwig/{entryId}
     defaults: { _controller: 'App\Controller\BlogControllerTwig::show' }
+    
+acme_privacy:
+    path:         /privacy
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: /templates/static/privacy.html.twig
